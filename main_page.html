@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FDEBD0; /* Warm background color */
+            text-align: left;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #6D4C41;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #FFCC80; /* Warm box color */
+            border: 3px solid #FFA726;
+        }
+
+        /* Header container to align the heading and image */
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        /* Image next to heading */
+        .main-image {
+            width: 220px;
+            height: 220px;
+            border-radius: 8%;
+            margin-left: 15px;
+        }
+
+        /* Main container holding the boxes */
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        /* Left box style */
+        .left-box, .right-box {
+            background-color: #FFF3E0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 45%;
+        }
+
+        /* Right-side boxes container */
+        .right-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Styling for box headings */
+        .box-heading {
+            font-size: 20px;
+            color: #5D4037;
+            margin-bottom: 10px;
+        }
+
+        /* Next button styling */
+        .next-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #FFA726;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .next-button:hover {
+            background-color: #FB8C00;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <!-- Heading at the top -->
+        <h1>Why Depresso, I'mma Tell You Why You're the Best <br>
+            & Your Presence Matters</h1>
+
+        <!-- Image next to heading -->
+        <img src="{{ url_for('static', filename='main_image.JPG') }}" alt="Main Image" class="main-image" >
+    </div>
+
+    <!-- Main container for the boxes -->
+    <div class="box-container">
+        <!-- Left-side box -->
+        <div class="left-box">
+            <h2 class="box-heading">10 Reasons To Love You</h2>
+            <p>
+                The girl is too adorable, and has a 1000 reasons at least, to be loved <br><br>
+                
+                To truly understand how deeply you're loved, you have to stay tuned and wait patiently. <br>
+                Someone as special as you deserves more than just a few words—your qualities, your kindness, and the way you brighten the world are endless. <br>
+                If I were to list everything I love about you, it would take an entire book, and even then, I might not capture it all. <br><br>
+                
+                It feels impossible to express in sentences what my heart feels every time I think of you. <br>
+                But here are just a few silly, sweet reasons why I love you: <br><br>
+                
+                1. The way you laugh at the smallest things, turning ordinary moments into something magical. <br><br>
+                
+                2. How you’re always there with a kind word or a shoulder to lean on, even when you’re having a tough day yourself. <br><br>
+                
+                3. Your endless curiosity about the world, and how you never stop learning or asking questions. <br><br>
+                
+                4. The way you randomly hum your favorite songs when you're relaxed, it’s like a little melody of happiness. <br><br>
+                
+                5. Your love for animals and how you care for the smallest creatures as if they’re part of your family. <br><br>
+                
+                6. The way you overthink things but always manage to make the right decision in the end. <br><br>
+                
+                7. How your eyes light up. <br><br>
+                
+                8. The way you always remember the little things about me. <br>
+                </p>
+        </div>
+
+        <!-- Right-side boxes stacked vertically -->
+        <div class="right-boxes">
+            <div class="right-box">
+                <h2 class="box-heading">10 Reasons To Live</h2>
+                <p>You are too kind of a person <br>
+                    You make this world a better place to live <br>
+                    You haven't kissed <br>
+                    You healed me & pulled me out of depression <br>
+                    You haven't visited Edinburgh yet <br>
+                    You haven't dated Lal yet <br>
+                    You still have to go to Italy, and listen to Italian jazz while eating Italian food <br>
+                    You haven't fucked <br>
+                    You have to become one of the best lawyers <br>
+                    You haven't gotten a Birkin yet <br>
+                    You still have much more to live out <br>
+                    Ps. (I'mma try and make it all comes true, not today but surely in future when I'm old enough) <br>
+                    </p>
+            </div>
+            <div class="right-box">
+                <h2 class="box-heading">10 Reasons You Should Be Happy</h2>
+                <p>You are the sweetest <br>
+                    You are the kindest soul <br>
+                    You are the hawtest one around <br>
+                    You are intellectual <br>
+                    You got two cute doggo <br>
+                    You got the best tits <br>
+                    You have potential to be the best <br>
+                    You bring joy to others <br>
+                    You are loved <br>
+                    Your dreams <br>
+                    You got the best kissable lips <br>
+                    You should be happy because you deserve it <br>
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <a href="{{ url_for('express') }}" class="next-button">Next Page</a>
+</body>
+</html>

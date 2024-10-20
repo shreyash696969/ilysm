@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="express-page">
+    <h2>Wanna Talk About How You Feeling?</h2>
+    <form action="{{ url_for('save_response') }}" method="POST">
+        <div>
+            <label for="heading">Describe Your Mood:</label>
+            <input type="text" id="heading" name="heading" required>
+        </div>
+        <div>
+            <label for="emotions">Your Feeling's:</label>
+            <textarea id="emotions" name="emotions" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</div>
+{% endblock %}

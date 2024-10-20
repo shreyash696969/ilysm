@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Your Feelings Matter</title>
+</head>
+<body>
+    {% block content %}{% endblock %}
+    {% block audio %}
+    <audio autoplay loop hidden>
+        <source src="{{ url_for('static', filename='audio/background.mp3') }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    {% endblock %}
+</body>
+</html>

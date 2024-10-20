@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="question-page">
+    <h1>Your Feelings Matter and You are Precious to Me</h1>
+    <img src="{{ url_for('static', filename='images/question_image1.jpg') }}" class="small-image">
+    <p>Are you disappointed with life?</p>
+    <a href="{{ url_for('question_two') }}" class="button">Yes</a>
+    <a href="{{ url_for('question_two') }}" class="button">No</a>
+</div>
+{% endblock %}

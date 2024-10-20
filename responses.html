@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="responses-page">
+    <h2>Saved Responses</h2>
+    <ul>
+        {% for response in responses %}
+        <li>
+            <strong>{{ response[0] }}:</strong> {{ response[1] }}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
